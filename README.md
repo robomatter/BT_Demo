@@ -8,5 +8,5 @@ firmware also needs to be installed.
 The USB cable must be disconnected from the VexIQ brain for the bluetooth link to work correctly.
 
 ##screen shots
-![home screen](https://raw.githubusercontent.com/robomatter/BT_Demo/master/ScreenShots/Simulator_Screen_Shot_landscape.jpg "")
-![home screen](https://raw.githubusercontent.com/robomatter/BT_Demo/master/ScreenShots/Simulator_Screen_Shot_portrait.jpg "")
+![home screen](https://raw.githubusercontent.com/robomatter/BT_Demo/master/ScreenShots/Simulator_Screen_Shot_landscape.png "")
+![home screen](https://raw.githubusercontent.com/robomatter/BT_Demo/master/ScreenShots/Simulator_Screen_Shot_portrait.png "")
