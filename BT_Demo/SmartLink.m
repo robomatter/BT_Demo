@@ -78,7 +78,7 @@ typedef enum _tTimeoutType {
 -(void)userTxData:(NSData*)data
 {
     NSLog(@"receive data");
-    [self stopTimer];
+    [self stopTimeoutTimer];
 
     self.currentReplyLength += data.length;
   
@@ -103,7 +103,7 @@ typedef enum _tTimeoutType {
 -(void)userTxDataComplete
 {
     NSLog(@"transmit complete");
-    [self stopTimer];
+    [self stopTimeoutTimer];
     
     if( self.waitForReply ) {
         [self startTimerWithMs:self.waitForReplyTime andType:kTimeoutTypeReceive];
@@ -158,7 +158,7 @@ typedef enum _tTimeoutType {
 /*-----------------------------------------------------------------------------*/
 - (void)startTimerWithMs:(int16_t)ms andType:(tTimeoutType)type
 {
-    [self stopTimer];
+    [self stopTimeoutTimer];
     
     // set type of timeout
     self.timeoutType = type;
@@ -178,7 +178,7 @@ typedef enum _tTimeoutType {
 /*-----------------------------------------------------------------------------*/
 /** @brief Stop timeout timer                                                  */
 /*-----------------------------------------------------------------------------*/
-- (void)stopTimer
+- (void)stopTimeoutTimer
 {
     if (self.timeoutTimer != nil) {
         [self.timeoutTimer invalidate];
@@ -192,7 +192,7 @@ typedef enum _tTimeoutType {
 /*-----------------------------------------------------------------------------*/
 -(void) timeoutCallback:(NSTimer *)timer
 {
-    [self stopTimer];
+    [self stopTimeoutTimer];
 
     if( self.timeoutType == kTimeoutTypeTransmit ) {
         NSLog(@"Transmit timeout");
