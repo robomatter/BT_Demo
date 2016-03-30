@@ -79,7 +79,7 @@ checkTouchSensor()
     static  char  msg[41];
 
     // If Touch LED installed
-    if(robotTouchSensor)
+    if(robotTouchSensor != PORTNONE)
         {
         int value = SensorValue[ robotTouchSensor ];
 
@@ -112,7 +112,7 @@ checkForUserMessage()
         if( usrMsg[0] == 'u' && usrMsg[1] == 's' && usrMsg[2] == 'r' )
             {
             // We have a message, see if the touch LED is found
-            if(robotTouchSensor)
+            if(robotTouchSensor != PORTNONE)
                 {
                 switch( usrMsg[3] )
                   {
