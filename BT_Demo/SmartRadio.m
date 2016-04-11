@@ -31,7 +31,7 @@
 @property (strong, nonatomic) CBMutableCharacteristic   *rateCharacteristic;
 @property (strong, nonatomic) CBMutableCharacteristic   *dataTxCharacteristic;
 @property (strong, nonatomic) CBMutableCharacteristic   *dataRxCharacteristic;
-@property (nonatomic) UInt16                            SSN;
+@property (nonatomic) UInt32                            SSN;
 
 @property (nonatomic, assign) id                        delagate;
 
