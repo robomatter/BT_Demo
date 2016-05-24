@@ -19,6 +19,7 @@
 		1A89B6841C691831009BB652 /* SmartMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A89B67F1C691831009BB652 /* SmartMessage.m */; };
 		1A89B6851C691831009BB652 /* SmartRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A89B6811C691831009BB652 /* SmartRadio.m */; };
 		1AAECB941C69868B0071B40F /* globalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AAECB931C69868B0071B40F /* globalData.m */; };
+		1AE5D95C1CF4F7F5009CABAD /* QRController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE5D95B1CF4F7F5009CABAD /* QRController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		1A89B6861C6919F6009BB652 /* RobotCOpcodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RobotCOpcodes.h; sourceTree = "<group>"; };
 		1AAECB921C6986740071B40F /* globalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globalData.h; sourceTree = "<group>"; };
 		1AAECB931C69868B0071B40F /* globalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = globalData.m; sourceTree = "<group>"; };
+		1AE5D95A1CF4F7F5009CABAD /* QRController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRController.h; sourceTree = "<group>"; };
+		1AE5D95B1CF4F7F5009CABAD /* QRController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				1A89B6541C6911B9009BB652 /* AppDelegate.m */,
 				1A89B6561C6911B9009BB652 /* ViewController.h */,
 				1A89B6571C6911B9009BB652 /* ViewController.m */,
+				1AE5D95A1CF4F7F5009CABAD /* QRController.h */,
+				1AE5D95B1CF4F7F5009CABAD /* QRController.m */,
 				1AAECB921C6986740071B40F /* globalData.h */,
 				1AAECB931C69868B0071B40F /* globalData.m */,
 				1A89B6591C6911B9009BB652 /* Main.storyboard */,
@@ -195,6 +200,7 @@
 				1A89B6841C691831009BB652 /* SmartMessage.m in Sources */,
 				1AAECB941C69868B0071B40F /* globalData.m in Sources */,
 				1A89B6851C691831009BB652 /* SmartRadio.m in Sources */,
+				1AE5D95C1CF4F7F5009CABAD /* QRController.m in Sources */,
 				1A89B6581C6911B9009BB652 /* ViewController.m in Sources */,
 				1A89B6551C6911B9009BB652 /* AppDelegate.m in Sources */,
 				1A89B6521C6911B9009BB652 /* main.m in Sources */,

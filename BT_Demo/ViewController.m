@@ -21,6 +21,7 @@
 /*-----------------------------------------------------------------------------*/
 
 #import "ViewController.h"
+#import "QRController.h"
 #import "GlobalData.h"
 #import "SmartController.h"
 
@@ -55,6 +56,21 @@
         self.systemIdText.text = @"0000";
     else
         self.systemIdText.text = [NSString stringWithFormat:@"%ld", ssn];
+}
+
+/*-----------------------------------------------------------------------------*/
+-(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {
+  if ([segue.identifier isEqualToString:@"unwindToViewController1"]) {
+    QRController *qrVC = (QRController *)segue.sourceViewController;
+    NSLog(@"qrcode is %d", qrVC.qrcode);
+    
+    if( qrVC.qrcode > 0 ) {
+      [_systemIdText performSelectorOnMainThread:@selector(setText:) withObject:[NSString stringWithFormat:@"%u", qrVC.qrcode] waitUntilDone:NO];
+      
+//      self.systemIdText.text = [NSString stringWithFormat:@"%u", qrVC.qrcode];
+      [GlobalVariables setBrainSsn:[_systemIdText.text intValue]];
+    }
+  }
 }
 
 /*-----------------------------------------------------------------------------*/
