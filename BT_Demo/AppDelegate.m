@@ -21,7 +21,7 @@
 /*-----------------------------------------------------------------------------*/
 
 #import "AppDelegate.h"
-#import "GlobalData.h"
+#import "globalData.h"
 
 @interface AppDelegate ()
 

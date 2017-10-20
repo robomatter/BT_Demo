@@ -22,7 +22,7 @@
 
 #import "ViewController.h"
 #import "QRController.h"
-#import "GlobalData.h"
+#import "globalData.h"
 #import "SmartController.h"
 
 @interface ViewController ()
